@@ -10,6 +10,7 @@ import org.springframework.context.annotation.Profile;
 
 import com.jdtech.course.entities.User;
 import com.jdtech.course.repositories.UserRepository;
+import com.jdtech.course.services.UserService;
 
 @Configuration
 @Profile("test")
@@ -18,6 +19,10 @@ public class TestConfig implements CommandLineRunner {
 	@Autowired
 	private UserRepository userRepository;
 
+
+	@Autowired
+	private UserService userService;
+	
 	@Override
 	public void run(String... args) throws Exception {
 		User u1 = new User(null, "Maria Brown", "maria@gmail.com", "988888888", "123456");
