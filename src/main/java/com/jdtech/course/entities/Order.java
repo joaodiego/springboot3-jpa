@@ -3,7 +3,6 @@ package com.jdtech.course.entities;
 import java.io.Serializable;
 import java.time.Instant;
 import java.util.Objects;
-
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
