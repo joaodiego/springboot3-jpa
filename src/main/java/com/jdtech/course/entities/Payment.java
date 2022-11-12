@@ -67,7 +67,7 @@ public class Payment implements Serializable {
 	public void setOrder(Order order) {
 		this.order = order;
 	}
-
+	
 	@Override
 	public int hashCode() {
 		return Objects.hash(id);
